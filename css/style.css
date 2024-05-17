@@ -488,6 +488,7 @@ a:focus {
 .about .about-img {
     position: relative;
     height: 100%;
+    /* overflow: hidden; */
 }
 
 .about .about-img img {
@@ -857,12 +858,13 @@ a:focus {
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
+    height: 200px;
 }
 
 .portfolio .portfolio-img img {
     position: relative;
     width: 100%; 
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
     transform: scale(1.1);
     transition: .5s;
@@ -973,6 +975,7 @@ a:focus {
 /********* Pricing CSS *********/
 /*******************************/
 .price {
+    /* margin-top: 2%; */
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
@@ -1106,9 +1109,11 @@ a:focus {
     justify-content: flex-start;
     box-shadow: inset 0 0 0 0 transparent;
     transition: ease-out 0.5s;
+    height: 230px;
 }
 
 .team .team-img {
+    height: 100%;
     position: relative;
     width: 50%;
     overflow: hidden;
@@ -1117,7 +1122,9 @@ a:focus {
 .team .team-img img {
     position: relative;
     width: 100%;
+    height: 100%;
     transition: .5s;
+    object-fit: cover;
 }
 
 .team .team-text {
