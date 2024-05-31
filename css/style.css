@@ -248,10 +248,54 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/test-bg.jpg);
+    /* background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/test-bg.jpg); */
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* .hero .square{
+    position: absolute;
+    pointer-events: none;
+    background-color: #ffffff;
+    animation: square-animate 5s linear infinite;
+} */
+
+.hero .square, .hero .circle, .hero .triangle {
+    position: absolute;
+    background-color: #ffffff;
+    animation: shape-animate 5s linear infinite;
+}
+
+.hero .circle {
+    border-radius: 50%;
+}
+
+.hero .triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #ffffff;
+    background-color: transparent;
+}
+
+@keyframes shape-animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 .hero .container-fluid {
@@ -262,6 +306,7 @@ a:focus {
     position: relative;
     text-align: right;
     padding-right: 75px;
+    z-index: 1;
 }
 
 .hero .hero-image img {

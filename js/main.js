@@ -91,8 +91,6 @@
         }
     });
     
-    
-    
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
@@ -104,6 +102,32 @@
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    function CreateShapes() {
+        const section = document.querySelector('.hero');
+        const shape = document.createElement('span');
+    
+        // Randomly assign a class for square, circle, or triangle
+        const shapes = ['square', 'circle', 'triangle'];
+        const randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+        shape.className = randomShape;
+    
+        var size = Math.random() * 20;
+    
+        shape.style.width = 10 + size + 'px';
+        shape.style.height = 10 + size + 'px';
+    
+        shape.style.top = Math.random() * innerHeight + 'px';
+        shape.style.left = Math.random() * innerWidth + 'px';
+    
+        section.appendChild(shape);
+        
+        setTimeout(() => {
+            shape.remove();
+        }, 5000);
+    }
+
+    setInterval(CreateShapes,150);
     
 })(jQuery);
 
