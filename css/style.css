@@ -616,13 +616,45 @@ a:focus {
     margin-bottom: 50px;
 }
 
-.language .skills .row {
+.language .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
-.language .skills .col-md-6 {
+.language .skills .skill-btn{
+    background-color: transparent;
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    transition: transform 0.3s;
+    border: 1px solid #EF233C;
+    border-radius: 5px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.language .skills .skill-btn:nth-child(1) {
+    margin-top: 0.5rem;
+}
+
+.language .skills .skill-btn img{
+    width:2rem;
+    height: 2rem;
+}
+
+.language .skills .skill-btn p {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+
+.language .skills .skill-btn:hover {
+    transform: scale(1.10);
+}
+/* .language .skills .col-md-6 {
     flex: 0 0 50%;
     max-width: 45%;
     padding: 0 15px;
@@ -631,7 +663,7 @@ a:focus {
 
 .language .skill-item {
     margin-bottom: 30px;
-}
+} */
 /* .language .skill-img{
     width: 50px;
     height: 50px;
@@ -643,7 +675,7 @@ a:focus {
     object-fit: cover;
 } */
 
-.language .skill-name {
+/* .language .skill-name {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -676,7 +708,7 @@ a:focus {
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
+} */
 
 /*******************************/
 /******* Experience CSS ********/
@@ -1239,6 +1271,15 @@ a:focus {
     padding: 45px 0 15px 0;
 }
 
+.team #teamContainer {
+    justify-content: center;
+}
+
+
+.team #teamContainer .row {
+    width: 100%;
+}
+
 .team .team-item {
     position: relative;
     background: #ffffff;
@@ -1735,3 +1776,6 @@ a:focus {
         padding: 0 5px;
     }
 }
+
+
+
