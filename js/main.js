@@ -618,7 +618,7 @@
     { img: "img/mysql.png", name: "Mysql" },
     { img: "img/postgres.png", name: "PostgreSql" },
     { img: "img/git.png", name: "Git" },
-    { img: "img/Asure.png", name: "Asure" },
+    { img: "img/asure.png", name: "Asure" },
     { img: "img/docker.png", name: "Docker" },
     { img: "img/postman.png", name: "Postman" },
   ];
