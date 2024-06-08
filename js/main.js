@@ -263,18 +263,18 @@
     portfolioItem.setAttribute("data-wow-delay", item.delay);
 
     portfolioItem.innerHTML = `
-  <div class="portfolio-wrap">
+  <div class="portfolio-wrap"  data-target="#portfolioModal"  data-toggle="modal" 
+             data-title="${item.title}" data-img="${item.imgSrc}" 
+             data-description="${item.description}" 
+             data-languages='${JSON.stringify(item.languages)
+               .replace(/'/g, "&apos;")
+               .replace(/"/g, "&quot;")}'>
       <div class="portfolio-img">
           <img src="${item.imgSrc}" alt="${item.title}">
       </div>
       <div class="portfolio-text">
           <h3>${item.title}</h3>
-          <a class="btn" href="#" data-toggle="modal" data-target="#portfolioModal" 
-             data-title="${item.title}" data-img="${item.imgSrc}" 
-             data-description="${item.description}" 
-             data-languages='${JSON.stringify(item.languages)
-               .replace(/'/g, "&apos;")
-               .replace(/"/g, "&quot;")}'>+</a>
+          <a class="btn" href="" onclick="return false;">+</a>
       </div>
   </div>
 `;
