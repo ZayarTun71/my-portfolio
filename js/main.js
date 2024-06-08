@@ -113,6 +113,10 @@
           color: "#1DCEFF",
         },
         {
+          name: "Tailwind",
+          color: "#29B5BD",
+        },
+        {
           name: "Typescript",
           color: "#387CC8",
         },
@@ -142,6 +146,10 @@
           color: "#1DCEFF",
         },
         {
+          name: "Tailwind",
+          color: "#29B5BD",
+        },
+        {
           name: "Typescript",
           color: "#387CC8",
         },
@@ -162,6 +170,22 @@
         {
           name: "Coldfusion",
           color: "#07295D",
+        },
+        {
+          name: "Html",
+          color: "#DD4922",
+        },
+        {
+          name: "Css",
+          color: "#146EAF",
+        },
+        {
+          name: "JavaScript",
+          color: "#E8D44E",
+        },
+        {
+          name: "Jquery",
+          color: "#0A69AD",
         },
         {
           name: "Microsoft Sql Server",
@@ -189,6 +213,18 @@
           color: "#1EB1EF",
         },
         {
+          name: "Reactjs",
+          color: "#1DCEFF",
+        },
+        {
+          name: "Css",
+          color: "#146EAF",
+        },
+        {
+          name: "JavaScript",
+          color: "#E8D44E",
+        },
+        {
           name: "Postgresql",
           color: "#3A6C94",
         },
@@ -213,6 +249,14 @@
         {
           name: "Reactjs",
           color: "#1DCEFF",
+        },
+        {
+          name: "Css",
+          color: "#146EAF",
+        },
+        {
+          name: "JavaScript",
+          color: "#E8D44E",
         },
         {
           name: "Mysql",
