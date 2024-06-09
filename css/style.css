@@ -631,7 +631,7 @@ a:focus {
     align-items: center;
     padding: 0.5rem;
     transition: transform 0.3s;
-    border: 0.1rem solid #EF233C;
+    border: 1px solid #EF233C;
     border-radius: 5px;
     width: 150px;
     text-decoration: none;
@@ -1272,6 +1272,7 @@ a:focus {
 
 .team #teamContainer {
     justify-content: center;
+    cursor: grab;
 }
 
 
