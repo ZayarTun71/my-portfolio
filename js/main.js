@@ -159,7 +159,6 @@
         },
       ],
       description:"An Interview Management System (IMS) is a comprehensive tool that facilitates the scheduling, coordination, and management of job interviews. It aims to enhance the efficiency and effectiveness of the recruitment process by automating various tasks, ensuring smooth communication between all stakeholders, and providing a centralized platform for managing candidate information and interview logistics.",
-
     },
     {
       imgSrc: "img/zenshou.png",
@@ -625,9 +624,9 @@
     teamContainer.className = ` owl-carousel`;
 
     $("#teamContainer").owlCarousel({
-      center: true,
-      autoplay: true,
       loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
       margin: 0.1,
       animateOut: "fadeOut",
       responsive: {
