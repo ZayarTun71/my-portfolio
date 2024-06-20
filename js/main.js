@@ -659,10 +659,13 @@
     { img: "img/java.png", name: "Java" },
     { img: "img/coldfusion.png", name: "Coldfusion" },
     { img: "img/mysql.png", name: "Mysql" },
+    { img: "img/mssqlserver.png", name: "MS Sql" },
     { img: "img/postgres.png", name: "PostgreSql" },
     { img: "img/git.png", name: "Git" },
     { img: "img/asure.png", name: "Asure" },
     { img: "img/docker.png", name: "Docker" },
+    { img: "img/kafka.png", name: "Kafka" },
+    { img: "img/debezium.jfif", name: "Debezium" },
     { img: "img/postman.png", name: "Postman" },
   ];
 
