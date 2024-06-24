@@ -131,7 +131,7 @@
       imgSrc: "img/interview-management.png",
       title: "Interview Management",
       filter: "filter-1",
-      delay: "0.2s",
+      delay: "0.1s",
       languages: [
         {
           name: "Php",
@@ -164,7 +164,7 @@
       imgSrc: "img/zenshou.png",
       title: "全商Webシステム",
       filter: "filter-3",
-      delay: "0.4s",
+      delay: "0.2s",
       languages: [
         {
           name: "Coldfusion",
@@ -197,7 +197,7 @@
       imgSrc: "img/kanji-cards.jpg",
       title: "Kanji Flash Card",
       filter: "filter-3",
-      delay: "0.8s",
+      delay: "0.3s",
       languages: [
         {
           name: "Nodejs",
@@ -235,7 +235,7 @@
       imgSrc: "img/sarmal-warmal.png",
       title: "Sar Mal War Mal",
       filter: "filter-2",
-      delay: "1s",
+      delay: "0.4s",
       languages: [
         {
           name: "Php",
@@ -269,7 +269,7 @@
       imgSrc: "img/hospital-appointment.jfif",
       title: "Hospital Appointment",
       filter: "filter-3",
-      delay: "0.6s",
+      delay: "0.5s",
       languages: [
         {
           name: "Nodejs",
@@ -290,6 +290,27 @@
       ],
       description:
         "A Hospital Appointment System serves as a centralized platform for managing patient appointments, enabling healthcare providers to efficiently allocate resources, reduce wait times, and improve patient satisfaction. It facilitates seamless communication between patients, healthcare staff, and administrative personnel throughout the appointment scheduling process.",
+    },
+    {
+      imgSrc: "img/user-management.jpg",
+      title: "User Management",
+      filter: "filter-1",
+      delay: "0.6s",
+      languages: [
+        {
+          name: "Php",
+          color: "#7B7FB6",
+        },
+        {
+          name: "Laravel",
+          color: "#FE5443",
+        },
+        {
+          name: "Mysql",
+          color: "#4A7DA3",
+        },
+      ],
+      description:"A user management system is software that manages user accounts, permissions, and security features like authentication and access control.",
     },
   ];
 
