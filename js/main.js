@@ -448,7 +448,7 @@
                 <div class="timeline-date">${item.date}</div>
                 <h2>
                     <div class="timeline-company-logo" style="width: ${item.logo_width}; height: ${item.logo_height};">
-                        <a href="${item.companyLink}" class="timeline-company-logo-link">
+                        <a href="${item.companyLink}" class="timeline-company-logo-link" target="_blank">
                             <img src="${item.companyLogo}" alt="">
                         </a>
                     </div>
