@@ -96,7 +96,7 @@
   const portfolioItems = [
     {
       imgSrc: "img/ticket-managemnet.png",
-      title: "Ticket Management",
+      title: "Ticket Management System",
       filter: "filter-2",
       delay: "0.0s",
       languages: [
@@ -125,11 +125,12 @@
           color: "#4A7DA3",
         },
       ],
-      description:"A Ticket Management System (TMS) is a software solution designed to help organizations manage and track customer support requests, issues, and inquiries efficiently. It serves as a centralized platform where support teams can organize, prioritize, and resolve tickets (requests) raised by customers or users."
+      description:
+        "A Ticket Management System (TMS) is a software solution designed to help organizations manage and track customer support requests, issues, and inquiries efficiently. It serves as a centralized platform where support teams can organize, prioritize, and resolve tickets (requests) raised by customers or users.",
     },
     {
       imgSrc: "img/interview-management.png",
-      title: "Interview Management",
+      title: "Interview Management System",
       filter: "filter-1",
       delay: "0.1s",
       languages: [
@@ -158,7 +159,8 @@
           color: "#4A7DA3",
         },
       ],
-      description:"An Interview Management System (IMS) is a comprehensive tool that facilitates the scheduling, coordination, and management of job interviews. It aims to enhance the efficiency and effectiveness of the recruitment process by automating various tasks, ensuring smooth communication between all stakeholders, and providing a centralized platform for managing candidate information and interview logistics.",
+      description:
+        "An Interview Management System (IMS) is a comprehensive tool that facilitates the scheduling, coordination, and management of job interviews. It aims to enhance the efficiency and effectiveness of the recruitment process by automating various tasks, ensuring smooth communication between all stakeholders, and providing a centralized platform for managing candidate information and interview logistics.",
     },
     {
       imgSrc: "img/zenshou.png",
@@ -191,7 +193,8 @@
           color: "#C9CDCC",
         },
       ],
-      description:"The Zensho Web System is an education-related web system used in Japanese commercial high schools and vocational schools. This system is designed to streamline school administrative tasks and student learning support. General functions include the following:",
+      description:
+        "The Zensho Web System is an education-related web system used in Japanese commercial high schools and vocational schools. This system is designed to streamline school administrative tasks and student learning support. General functions include the following:",
     },
     {
       imgSrc: "img/kanji-cards.jpg",
@@ -267,7 +270,7 @@
     },
     {
       imgSrc: "img/hospital-appointment.jfif",
-      title: "Hospital Appointment",
+      title: "Hospital Appointment System",
       filter: "filter-3",
       delay: "0.5s",
       languages: [
@@ -293,7 +296,7 @@
     },
     {
       imgSrc: "img/user-management.jpg",
-      title: "User Management",
+      title: "User Management System",
       filter: "filter-1",
       delay: "0.6s",
       languages: [
@@ -310,20 +313,16 @@
           color: "#4A7DA3",
         },
       ],
-      description:"A user management system is software that manages user accounts, permissions, and security features like authentication and access control.",
+      description:
+        "A user management system is software that manages user accounts, permissions, and security features like authentication and access control.",
     },
   ];
 
   const portfolioContainer = document.getElementById("portfolioContainer");
-  const portfolioModal = document.getElementById("portfolioModal");
-  const modalImage = document.getElementById("modalImage");
-  const modalTitle = document.getElementById("portfolioModalLabel");
-  const modalDescription = document.getElementById("modalDescription");
-  const modalLanguages = document.getElementById("modalLanguages");
 
   portfolioItems.forEach((item, index) => {
     const portfolioItem = document.createElement("div");
-    portfolioItem.className = `col-lg-4 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp`;
+    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp rounded`;
     portfolioItem.setAttribute("data-wow-delay", item.delay);
 
     portfolioItem.innerHTML = `
@@ -338,13 +337,30 @@
       </div>
       <div class="portfolio-text">
           <h3>${item.title}</h3>
-          <a class="btn" href="" onclick="return false;">+</a>
-      </div>
+          <i class="fas fa-external-link-alt"></i>
+       </div>
   </div>
 `;
 
     portfolioContainer.appendChild(portfolioItem);
   });
+
+//   const moreButton = document.getElementById("moreButton");
+//   const portfolioContainerParent = document.querySelector(
+//     ".portfolio-container-parent"
+//   );
+
+//   moreButton.addEventListener("click", function () {
+//     if (portfolioContainerParent.style.height === "auto") {
+//         portfolioContainerParent.style.height = "auto";
+//         portfolioContainerParent.style.overflow = "hidden";
+//         moreButton.textContent = "More";
+//     } else {
+//         portfolioContainerParent.style.height = "auto";
+//         portfolioContainerParent.style.overflow = "visible";
+//         moreButton.textContent = "Less";
+//     }
+// });
 
   $("#portfolioModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // Button that triggered the modal
@@ -379,6 +395,7 @@
   var portfolioIsotope = $(".portfolio-container").isotope({
     itemSelector: ".portfolio-item",
     layoutMode: "fitRows",
+    sortBy: "random",
   });
 
   $("#portfolio-filter li").on("click", function () {
