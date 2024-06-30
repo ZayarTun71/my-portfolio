@@ -632,8 +632,8 @@ a:focus {
     align-items: center;
     padding: 0.5rem;
     transition: transform 0.3s;
-    border: 1px solid #EF233C;
-    border-radius: 5px;
+    /* border: 1px solid #EF233C; */
+    /* border-radius: 5px; */
     width: 150px;
     text-decoration: none;
 }
@@ -648,6 +648,7 @@ a:focus {
 }
 
 .language .skills .skill-btn p {
+    font-size: 0.9rem;
     margin: 0;
     margin-left: 0.5rem;
 }

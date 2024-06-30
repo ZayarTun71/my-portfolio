@@ -322,7 +322,7 @@
 
   portfolioItems.forEach((item, index) => {
     const portfolioItem = document.createElement("div");
-    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp rounded`;
+    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp"`;
     portfolioItem.setAttribute("data-wow-delay", item.delay);
 
     portfolioItem.innerHTML = `
@@ -332,7 +332,7 @@
              data-languages='${JSON.stringify(item.languages)
                .replace(/'/g, "&apos;")
                .replace(/"/g, "&quot;")}'>
-      <div class="portfolio-img">
+      <div class="portfolio-img rounded-lg">
           <img src="${item.imgSrc}" alt="${item.title}">
       </div>
       <div class="portfolio-text">
@@ -693,10 +693,10 @@
     { img: "img/prisma.png", name: "Prisma" },
     { img: "img/sequelize.png", name: "Sequelize" },
     { img: "img/reactjs.png", name: "React.js" },
-    { img: "img/typescript.png", name: "Typescript" },
+    { img: "img/typescript.png", name: "TypeScript" },
     { img: "img/java.png", name: "Java" },
     { img: "img/coldfusion.png", name: "Coldfusion" },
-    { img: "img/mysql.png", name: "Mysql" },
+    { img: "img/mysql.png", name: "MySql" },
     { img: "img/mssqlserver.png", name: "MS Sql" },
     { img: "img/postgres.png", name: "PostgreSql" },
     { img: "img/git.png", name: "Git" },
@@ -711,7 +711,7 @@
 
   skills.forEach((skill) => {
     const skillItem = document.createElement("a");
-    skillItem.classList.add("skill-btn", "btn-block");
+    skillItem.classList.add("skill-btn", "btn-block","rounded","shadow");
     skillItem.href = "#";
 
     skillItem.innerHTML = `
