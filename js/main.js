@@ -345,22 +345,22 @@
     portfolioContainer.appendChild(portfolioItem);
   });
 
-//   const moreButton = document.getElementById("moreButton");
-//   const portfolioContainerParent = document.querySelector(
-//     ".portfolio-container-parent"
-//   );
+  //   const moreButton = document.getElementById("moreButton");
+  //   const portfolioContainerParent = document.querySelector(
+  //     ".portfolio-container-parent"
+  //   );
 
-//   moreButton.addEventListener("click", function () {
-//     if (portfolioContainerParent.style.height === "auto") {
-//         portfolioContainerParent.style.height = "auto";
-//         portfolioContainerParent.style.overflow = "hidden";
-//         moreButton.textContent = "More";
-//     } else {
-//         portfolioContainerParent.style.height = "auto";
-//         portfolioContainerParent.style.overflow = "visible";
-//         moreButton.textContent = "Less";
-//     }
-// });
+  //   moreButton.addEventListener("click", function () {
+  //     if (portfolioContainerParent.style.height === "auto") {
+  //         portfolioContainerParent.style.height = "auto";
+  //         portfolioContainerParent.style.overflow = "hidden";
+  //         moreButton.textContent = "More";
+  //     } else {
+  //         portfolioContainerParent.style.height = "auto";
+  //         portfolioContainerParent.style.overflow = "visible";
+  //         moreButton.textContent = "Less";
+  //     }
+  // });
 
   $("#portfolioModal").on("show.bs.modal", function (event) {
     const button = $(event.relatedTarget); // Button that triggered the modal
@@ -415,7 +415,6 @@
       companyName: "AceplusSolutions",
       position: "Junior Engineer",
       location: "Hlaing Yangon Myanmar",
-      alignment: "left",
       delay: "0.1s",
       logo_width: "50px",
       logo_height: "50px",
@@ -427,7 +426,6 @@
       companyName: "Smilax Global",
       position: "Mid Level Engineer",
       location: "Bhan Yangon Myanmar",
-      alignment: "right",
       delay: "0.2s",
       logo_width: "60px",
       logo_height: "60px",
@@ -436,11 +434,10 @@
 
   const timelineContainer = document.getElementById("timelineContainer");
 
-  timelineItems.forEach((item) => {
+  timelineItems.forEach((item,index) => {
     const timelineItem = document.createElement("div");
-    timelineItem.className = `timeline-item ${item.alignment} wow slideIn${
-      item.alignment === "left" ? "Left" : "Right"
-    }`;
+    const alignment = index % 2 === 0 ? "left" : "right";
+    timelineItem.className = `timeline-item ${alignment} wow slideIn${alignment}`;
     timelineItem.setAttribute("data-wow-delay", item.delay);
 
     timelineItem.innerHTML = `
@@ -470,29 +467,49 @@
   const educationTimelineItems = [
     {
       date: "2018 - 2020",
-      companyName: "Metro IT and Japanese Language Center",
+      educationName: "Metro IT and Japanese Language Center",
+      educationLink: "https://metro-myanmar.com/mic/index.php",
+      educationLogo: "./img/metro.png",
       location: "Myanmar Yangon",
       description:
         "I've earned both a Web Engineer Diploma and Certificate, showcasing my expertise in web development.",
-      alignment: "left",
       delay: "0.1s",
+      logo_width: "50px",
+      logo_height: "50px",
+    },
+    {
+      date: "2019",
+      educationName: "ITPEC (IP)",
+      educationLink: "https://itpec.org/",
+      educationLogo: "./img/itpec.jfif",
+      location: "Myanmar Yangon",
+      description: "ITPEC (IP) Certificate",
+      delay: "0.3s",
+      logo_width: "50px",
+      logo_height: "50px",
     },
     {
       date: "2019 - ??",
-      companyName: "Dagon University(Psychology)",
+      educationName: "Dagon University(Psychology)",
+      educationLink: "https://www.dagonuniversity.edu.mm/category/departments/",
+      educationLogo: "./img/dagon-university.png",
       location: "Myanmar Yangon",
       description:
         "Stopped my University Education because of political unrest.",
-      alignment: "right",
       delay: "0.2s",
+      logo_width: "50px",
+      logo_height: "55px",
     },
     {
       date: "2023",
-      companyName: "JLPT, NatTest (N3)",
+      educationName: "JLPT, NatTest (N3)",
+      educationLink: "https://www.jlpt.jp/e/",
+      educationLogo: "./img/jlpt.png",
       location: "Myanmar Yangon",
       description: "JLPT, NatTest (N3) Certificate",
-      alignment: "left",
       delay: "0.3s",
+      logo_width: "50px",
+      logo_height: "50px",
     },
   ];
 
@@ -500,19 +517,28 @@
     "educationTimelineContainer"
   );
 
-  educationTimelineItems.forEach((item) => {
+  educationTimelineItems.forEach((item, index) => {
     const educationTimelineItem = document.createElement("div");
-    educationTimelineItem.className = `timeline-item ${
-      item.alignment
-    } wow slideIn${item.alignment === "left" ? "Left" : "Right"}`;
+    const alignment = index % 2 === 0 ? "left" : "right";
+    educationTimelineItem.className = `timeline-item ${alignment} wow slideIn${alignment}`;
     educationTimelineItem.setAttribute("data-wow-delay", item.delay);
 
     educationTimelineItem.innerHTML = `
+
             <div class="timeline-text">
                 <div class="timeline-date">${item.date}</div>
-                <h2>${item.companyName}</h2>
-                <h4>${item.location}</h4>
-                <p>${item.description}</p>
+                <h2>
+                    <div class="timeline-company-logo" style="width: ${item.logo_width}; height: ${item.logo_height};">
+                        <a href="${item.educationLink}" class="timeline-company-logo-link" target="_blank">
+                            <img src="${item.educationLogo}" alt="">
+                        </a>
+                    </div>
+                    ${item.educationName}
+                </h2>
+                <p>
+                    Location - ${item.location}.
+                </p>
+                <h4 class="mt-2">${item.description}</h4>
             </div>
         `;
 
@@ -711,7 +737,7 @@
 
   skills.forEach((skill) => {
     const skillItem = document.createElement("a");
-    skillItem.classList.add("skill-btn", "btn-block","rounded","shadow");
+    skillItem.classList.add("skill-btn", "btn-block", "rounded", "shadow");
     skillItem.href = "#";
 
     skillItem.innerHTML = `
