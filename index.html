@@ -19,8 +19,14 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /> -->
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
@@ -48,6 +54,17 @@
           <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
           <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
           <a href="#footer" class="nav-item nav-link">Contact</a>
+
+          <div class="dropdown show">
+            <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nav-item nav-link" role="button" href="#">English</a>
+              <a class="dropdown-item nav-item nav-link" role="button" href="#">Japanese</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -410,7 +427,9 @@
         <p>My Recommendations</p>
         <h2>Highly Recommended Professionals</h2>
       </div>
-      <div class="row" id="teamContainer"></div>
+      <div class="row owl-theme" id="teamContainer">
+        
+      </div>
     </div>
   </div>
   <!-- Team End -->
@@ -551,10 +570,10 @@
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- Contact Javascript File -->
   <script src="mail/jqBootstrapValidation.min.js"></script>
   <script src="mail/contact.js"></script>

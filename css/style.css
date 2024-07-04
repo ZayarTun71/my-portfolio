@@ -1308,6 +1308,13 @@ a:focus {
     cursor: grab;
 }
 
+/* .owl-dots {
+    margin: auto 0;
+    background: red;
+  }
+  .owl-dot span{
+    background: white;
+  } */
 
 .team #teamContainer .row {
     width: 100%;
@@ -1315,7 +1322,6 @@ a:focus {
 
 .team .team-item {
     position: relative;
-    background: #ffffff;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
