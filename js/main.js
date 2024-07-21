@@ -301,8 +301,8 @@
       delay: "0.6s",
       languages: [
         {
-          name: "Php",
-          color: "#7B7FB6",
+          name: "Nodejs",
+          color: "#5AA14B",
         },
         {
           name: "Laravel",
@@ -316,6 +316,40 @@
       description:
         "A user management system is software that manages user accounts, permissions, and security features like authentication and access control.",
     },
+    {
+      imgSrc: "img/recruitment-service.jpg",
+      title: "Recruitment Sercive",
+      filter: "filter-1",
+      delay: "0.7s",
+      languages: [
+        {
+          name: "Nodejs",
+          color: "#5AA14B",
+        },
+        {
+          name: "Nestjs",
+          color: "#EA285D",
+        },
+        {
+          name: "Nextjs",
+          color: "#000000",
+        },
+        {
+          name: "Postgresql",
+          color: "#3A6C94",
+        },
+        {
+          name: "Kafka",
+          color: "#231D1F",
+        },
+        {
+          name: "Debezium",
+          color: "#5EC5B3",
+        }
+      ],
+      description:
+      "Our Recruitment Service streamlines the hiring process with advanced tools for job posting, candidate sourcing, automated screening, and seamless interview scheduling, ensuring efficient and compliant recruitment."
+      },
   ];
 
   const portfolioContainer = document.getElementById("portfolioContainer");
