@@ -1,4 +1,4 @@
-import { renderPortfolio } from "./modules/project.js";
+import { renderProject } from "./modules/project.js";
 import { renderExperience } from "./modules/experience.js";
 import { renderEducation } from "./modules/education.js";
 import { renderService } from "./modules/service.js";
@@ -53,16 +53,18 @@ import { renderHero } from "./modules/hero.js";
   renderNavbar();
   // Render the Hero
   renderHero();
-  // Render the portfolios
-  renderPortfolio();
-  // Render the experiences
-  renderExperience();
-  // Render the Education
-  renderEducation();
-  // Render the Service
-  renderService();
   // Render the Skill
   renderSkill();
+  // Render the Service
+  renderService();
+  // Render the experience
+  renderExperience();
+  // Render the portfolio
+  renderProject();
+  // Render the Education
+  renderEducation();
+  
+  
 
   ///Teams
 

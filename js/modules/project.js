@@ -1,4 +1,4 @@
-export function renderPortfolio() {
+export function renderProject() {
 
   const portfolioItems = [
     {
