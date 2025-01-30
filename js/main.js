@@ -56,7 +56,7 @@ import { renderHero } from "./modules/hero.js";
   // Render the Skill
   renderSkill();
   // Render the Service
-  renderService();
+  // renderService();
   // Render the experience
   renderExperience();
   // Render the portfolio

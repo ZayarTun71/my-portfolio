@@ -257,8 +257,52 @@ export function renderProject() {
       description:
         "Our Recruitment Service streamlines the hiring process with advanced tools for job posting, candidate sourcing, automated screening, and seamless interview scheduling, ensuring efficient and compliant recruitment.",
     },
+    {
+      imgSrc: "img/welfare-point-system.png",
+      title: "Welfare Point System(矢崎)",
+      filter: "filter-3",
+      delay: "0.8s",
+      languages: [
+        {
+          name: "Php",
+          color: "#7B7FB6",
+        },
+        {
+          name: "Laravel",
+          color: "#FE5443",
+        },
+        {
+          name: "Mysql",
+          color: "#4A7DA3",
+        },
+      ],
+      description:
+        "A Point System for an internal company food exchange allows employees to collect points and redeem them for food items. Employees earn points based on company-defined criteria, such as attendance, performance, or participation in activities. These points can then be used like currency at the company cafeteria or vending machines.",
+    },
+    {
+      imgSrc: "img/harada-scroll.jpg",
+      title: "Warehouse Management System",
+      filter: "filter-3",
+      delay: "0.8s",
+      languages: [
+        {
+          name: "Php",
+          color: "#7B7FB6",
+        },
+        {
+          name: "Laravel",
+          color: "#FE5443",
+        },
+        {
+          name: "Mysql",
+          color: "#4A7DA3",
+        },
+      ],
+      description:
+        "A Warehouse System is a structured process for managing inventory storage, movement, and tracking within a warehouse. It ensures efficient handling of goods from arrival to dispatch.",
+    },
   ];
-
+ 
   const portfolioContainer = document.getElementById('portfolioContainer');
 
   portfolioItems.forEach((item, index) => {
