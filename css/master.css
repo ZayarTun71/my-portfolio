@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #00ACC1;
-    --primary-background-color: linear-gradient(rgba(0, 128, 128, 1), rgba(0, 128, 128, 1));
+    --primary-color: #42b883;
+    --primary-background-color: linear-gradient(rgba(0, 168, 120, 1), rgba(0, 168, 120, 1));
     --white-color: #ffffff;
-    --black-color: #111111;
-    --black-color2: #414141;
+    --black-color: #35495e;
+    --black-color2: #35495e;
     --gray-color: #dddddd;
 }
