@@ -177,6 +177,6 @@
     .experience .timeline .timeline-item.left .timeline-text,
     .experience .timeline .timeline-item.right .timeline-text {
         border-right: none;
-        border-left: 5px solid var(--gray-color);
+        border-left: 5px solid var(--black-color);
     }
 }
