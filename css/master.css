@@ -1,6 +1,6 @@
 :root {
     --primary-color: #42b883;
-    --primary-background-color: linear-gradient(rgba(0, 168, 120, 1), rgba(0, 168, 120, 1));
+    --primary-background-color: linear-gradient(45deg, rgba(42, 59, 67, 1), rgba(66, 184, 131, 1));
     --white-color: #ffffff;
     --black-color: #35495e;
     --black-color2: #35495e;
