@@ -5,7 +5,6 @@ export function renderProject() {
       imgSrc: "img/ticket-managemnet.png",
       title: "Ticket Management System",
       filter: "filter-2",
-      delay: "0.0s",
       languages: [
         {
           name: "Php",
@@ -39,7 +38,6 @@ export function renderProject() {
       imgSrc: "img/interview-management.png",
       title: "Interview Management System",
       filter: "filter-1",
-      delay: "0.1s",
       languages: [
         {
           name: "Php",
@@ -73,7 +71,6 @@ export function renderProject() {
       imgSrc: "img/zenshou.png",
       title: "全商Webシステム",
       filter: "filter-3",
-      delay: "0.2s",
       languages: [
         {
           name: "Coldfusion",
@@ -107,7 +104,6 @@ export function renderProject() {
       imgSrc: "img/kanji-cards.jpg",
       title: "Kanji Flash Card",
       filter: "filter-3",
-      delay: "0.3s",
       languages: [
         {
           name: "Nodejs",
@@ -145,7 +141,6 @@ export function renderProject() {
       imgSrc: "img/sarmal-warmal.png",
       title: "Sar Mal War Mal",
       filter: "filter-2",
-      delay: "0.4s",
       languages: [
         {
           name: "Php",
@@ -179,7 +174,6 @@ export function renderProject() {
       imgSrc: "img/hospital-appointment.jfif",
       title: "Hospital Appointment System",
       filter: "filter-3",
-      delay: "0.5s",
       languages: [
         {
           name: "Nodejs",
@@ -205,7 +199,6 @@ export function renderProject() {
       imgSrc: "img/user-management.jpg",
       title: "User Management System",
       filter: "filter-1",
-      delay: "0.6s",
       languages: [
         {
           name: "Nodejs",
@@ -227,7 +220,6 @@ export function renderProject() {
       imgSrc: "img/recruitment-service.jpg",
       title: "Recruitment Sercive",
       filter: "filter-1",
-      delay: "0.7s",
       languages: [
         {
           name: "Nodejs",
@@ -261,7 +253,6 @@ export function renderProject() {
       imgSrc: "img/welfare-point-system.png",
       title: "Welfare Point System(矢崎)",
       filter: "filter-3",
-      delay: "0.8s",
       languages: [
         {
           name: "Php",
@@ -283,7 +274,6 @@ export function renderProject() {
       imgSrc: "img/harada-scroll.jpg",
       title: "Warehouse Management System",
       filter: "filter-3",
-      delay: "0.8s",
       languages: [
         {
           name: "Php",
@@ -307,8 +297,8 @@ export function renderProject() {
 
   portfolioItems.forEach((item, index) => {
     const portfolioItem = document.createElement("div");
-    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp"`;
-    portfolioItem.setAttribute("data-wow-delay", item.delay);
+    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp`;
+    portfolioItem.setAttribute("data-wow-delay", `${0.1 + index * 0.1}s`);
 
     portfolioItem.innerHTML = `
   <div class="portfolio-wrap"  data-target="#portfolioModal"  data-toggle="modal" 

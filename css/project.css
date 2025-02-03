@@ -84,6 +84,26 @@
     transition: transform 0.3s ease;
 }
 
+.portfolio .portfolio-item:hover .portfolio-text {
+    position: relative;
+}
+
+.portfolio .portfolio-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+    border-radius: 2px
+}
+
+.portfolio .portfolio-item:hover .portfolio-text::after {
+    width: 100%;
+}
+
 .portfolio .portfolio-text {
     position: relative;
     height: 60px;

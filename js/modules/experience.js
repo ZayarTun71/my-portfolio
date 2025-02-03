@@ -1,5 +1,5 @@
 export function renderExperience() {
-    
+
   const timelineItems = [
     {
       date: "2023(feb-20) - 2024(may-21)",
@@ -41,11 +41,15 @@ export function renderExperience() {
   timelineItems.forEach((item, index) => {
     const timelineItem = document.createElement("div");
     const alignment = index % 2 === 0 ? "left" : "right";
+
+    const animation = window.innerWidth < 768 ? "fadeInRight" : (index % 2 === 0 ? "fadeInLeft" : "fadeInRight");
+    const animationDelay = `${0.1 + index * 0.2}s`;
+
     timelineItem.className = `timeline-item ${alignment} wow slideIn${alignment}`;
     timelineItem.setAttribute("data-wow-delay", item.delay);
 
     timelineItem.innerHTML = `
-                <div class="timeline-text">
+                 <div class="timeline-text wow ${animation}" data-wow-delay="${animationDelay}">
                     <div class="timeline-date">${item.date}</div>
                     <h2>
                         <div class="timeline-company-logo" style="width: ${item.logo_width}; height: ${item.logo_height};">

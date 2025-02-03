@@ -55,12 +55,15 @@ export function renderEducation() {
   educationTimelineItems.forEach((item, index) => {
     const educationTimelineItem = document.createElement("div");
     const alignment = index % 2 === 0 ? "left" : "right";
+
+    const animation = window.innerWidth < 768 ? "fadeInRight" : (index % 2 === 0 ? "fadeInLeft" : "fadeInRight");
+    const animationDelay = `${0.1 + index * 0.2}s`;
+
     educationTimelineItem.className = `timeline-item ${alignment} wow slideIn${alignment}`;
     educationTimelineItem.setAttribute("data-wow-delay", item.delay);
 
     educationTimelineItem.innerHTML = `
-    
-                <div class="timeline-text">
+                <div class="timeline-text wow ${animation}" data-wow-delay="${animationDelay}">
                     <div class="timeline-date">${item.date}</div>
                     <h2>
                         <div class="timeline-company-logo" style="width: ${item.logo_width}; height: ${item.logo_height};">
