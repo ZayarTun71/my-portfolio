@@ -8,6 +8,7 @@ export function renderExperience() {
       companyName: "AceplusSolutions",
       position: "Junior Engineer",
       location: "Hlaing Yangon Myanmar",
+      jobType: "On-site",
       delay: "0.1s",
       logo_width: "50px",
       logo_height: "50px",
@@ -19,17 +20,19 @@ export function renderExperience() {
       companyName: "Smilax Global",
       position: "Mid Level Engineer",
       location: "Bhan Yangon Myanmar",
+      jobType: "On-site",
       delay: "0.2s",
       logo_width: "60px",
       logo_height: "60px",
     },
     {
-      date: "2024(aug-1) - present",
+      date: "2024(aug-1) - 2025(march-6)",
       companyLink: "https://www.brycenmyanmar.com.mm/",
       companyLogo: "./img/brycen_myanmar_logo.jfif",
       companyName: "Brycen Myanmar",
       position: "Mid Level Engineer",
       location: "Bhan Yangon Myanmar",
+      jobType: "On-site",
       delay: "0.3s",
       logo_width: "60px",
       logo_height: "60px",
@@ -59,10 +62,9 @@ export function renderExperience() {
                         </div>
                         ${item.companyName}
                     </h2>
+                    <p>Location - ${item.location}.</p>
                     <h4>Position - ${item.position}</h4>
-                    <p>
-                        Location - ${item.location}.
-                    </p>
+                    <h4>Job Type - ${item.jobType}</h4>
                 </div>
             `;
 

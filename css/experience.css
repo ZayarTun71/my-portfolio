@@ -123,14 +123,14 @@
 }
 
 .experience .timeline .timeline-text h4 {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     font-size: 16px;
     /* font-style: italic; */
     font-weight: 400;
 }
 
 .experience .timeline .timeline-text p {
-    margin: 0;
+    margin: 0 0 10px 0;
     font-size: 16px;
 }
 

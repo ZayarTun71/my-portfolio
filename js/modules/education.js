@@ -73,9 +73,7 @@ export function renderEducation() {
                         </div>
                         ${item.educationName}
                     </h2>
-                    <p>
-                        Location - ${item.location}.
-                    </p>
+                    <p>Location - ${item.location}.</p>
                     <h4 class="mt-2">${item.description}</h4>
                 </div>
             `;

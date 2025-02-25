@@ -297,7 +297,7 @@ export function renderProject() {
 
   portfolioItems.forEach((item, index) => {
     const portfolioItem = document.createElement("div");
-    portfolioItem.className = `col-lg-6 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp`;
+    portfolioItem.className = `col-lg-4 col-md-6 col-sm-12 portfolio-item ${item.filter} wow fadeInUp`;
     portfolioItem.setAttribute("data-wow-delay", `${0.1 + index * 0.1}s`);
 
     portfolioItem.innerHTML = `
@@ -307,13 +307,12 @@ export function renderProject() {
              data-languages='${JSON.stringify(item.languages)
                .replace(/'/g, "&apos;")
                .replace(/"/g, "&quot;")}'>
-      <div class="portfolio-img rounded-lg">
+      <div class="portfolio-img">
           <img src="${item.imgSrc}" alt="${item.title}">
+          <div class="portfolio-overlay">
+            <h3>${item.title}</h3>
+        </div>
       </div>
-      <div class="portfolio-text">
-          <h3>${item.title}</h3>
-          <i class="fas fa-external-link-alt"></i>
-       </div>
   </div>
 `;
 

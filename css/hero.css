@@ -65,29 +65,15 @@
 
 .hero .hero-image {
     position: relative;
-    text-align: right;
-    padding-right: 75px;
+    align-items: center;
     z-index: 1;
 }
 
 .hero .hero-image img {
-    max-width: 80%;
+    max-width: 90%;
     max-height: 80%;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+    object-fit: cover;
+    display: block;
 }
 
 .hero .hero-content {

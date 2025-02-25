@@ -36,20 +36,6 @@
     border-color: var(--primary-color);
 }
 
-/* .portfolio .portfolio-container-parent{
-    height: auto;
-    min-height: 100vh;
-    transition: height 0.15s ease-out;
-    overflow: hidden;
-    background-color: red;
-} */
-
-
-/* .portfolio .portfolio-container{
-    height: 500px;
-    overflow: hidden;
-} */
-
 .portfolio .portfolio-item {
     position: relative;
     overflow: hidden;
@@ -75,80 +61,36 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.1);
-    transition: .5s;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .portfolio .portfolio-item:hover img {
-    transform: scale(1.3);
-    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
-.portfolio .portfolio-item:hover .portfolio-text {
-    position: relative;
-}
-
-.portfolio .portfolio-text::after {
-    content: '';
+.portfolio .portfolio-overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    width: 0%;
-    height: 4px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
-    border-radius: 2px
-}
-
-.portfolio .portfolio-item:hover .portfolio-text::after {
     width: 100%;
-}
-
-.portfolio .portfolio-text {
-    position: relative;
-    height: 60px;
+    height: 100%;
+    background: rgba(42, 59, 67, 0.9);
     display: flex;
-    align-items: center;
-    background: var(--white-color);
-    justify-content: space-between;
-}
-
-.portfolio .portfolio-text h3 {
-    font-size: 15px;
-    font-weight: 600;
-    margin: 0 0 0 15px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.portfolio .portfolio-text i {
-    font-size: 18px;
-    margin: 0 15px 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    color: var(--black-color);
-    transition: .5s;
-}
-
-.portfolio .portfolio-text i:hover {
-
-    color: var(--primary-color);
-}
-
-/* .portfolio .portfolio-text a.btn {
-    width: 50px;
-    height: 50px;
-    padding: 0 0 2px 1px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 45px;
-    font-weight: 100;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-item:hover a.btn {
+.portfolio .portfolio-img:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio .portfolio-overlay h3 {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
     color: var(--primary-color);
-    background: transparent;
-    box-shadow: inset 0 0 0 0 var(--primary-color);
-    border-color: var(--primary-color);
-} */
+}
