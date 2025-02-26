@@ -15,15 +15,9 @@
     margin: 0;
     font-size: 45px;
     line-height: 0px;
-    font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-
-}
-
-.navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 40px;
+    font-family: "superCharge";
 }
 
 .navbar .dropdown-menu {

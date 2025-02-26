@@ -9,7 +9,7 @@ export function renderNavbar() {
   });
 
   // Smooth scrolling on the navbar links
-  $(".navbar-nav a").on("click", function (event) {
+  $(".navbar-nav a, .footer-07 a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
 

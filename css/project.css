@@ -62,7 +62,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .portfolio .portfolio-item:hover img {
@@ -88,8 +87,7 @@
 }
 
 .portfolio .portfolio-overlay h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
     color: var(--primary-color);

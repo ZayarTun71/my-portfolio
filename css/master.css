@@ -6,3 +6,10 @@
     --black-color2: #35495e;
     --gray-color: #dddddd;
 }
+
+@font-face {
+    font-family: "superCharge";
+    src: url("../fonts/superCharge/SuperchargeStraight-nR87V.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

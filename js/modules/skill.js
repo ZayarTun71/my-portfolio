@@ -11,6 +11,7 @@ export function renderSkill() {
     { img: "img/nodejs.png", name: "Node.js" },
     { img: "img/expressjs.png", name: "Express.js" },
     { img: "img/nestjs.png", name: "Nest.js" },
+    { img: "img/electronjs.png", name: "Electron.js" },
     { img: "img/prisma.png", name: "Prisma" },
     { img: "img/sequelize.png", name: "Sequelize" },
     { img: "img/reactjs.png", name: "React.js" },
@@ -40,6 +41,10 @@ export function renderSkill() {
                 <p>${skill.name}</p>
             `;
 
+    skillItem.addEventListener("click", (event) => {
+      event.preventDefault();
+    });
+    
     skillsContainer.appendChild(skillItem);
   });
 }
