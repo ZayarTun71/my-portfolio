@@ -96,3 +96,15 @@
         box-shadow: none;
     }
 }
+
+@media (max-width: 600px) {
+    .navbar .navbar-brand {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar .navbar-brand {
+        font-size: 30px;
+    }
+}

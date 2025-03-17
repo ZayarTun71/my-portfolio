@@ -11,13 +11,6 @@
     background-size: cover;
 }
 
-/* .hero .square{
-    position: absolute;
-    pointer-events: none;
-    background-color: var(--white-color);
-    animation: square-animate 5s linear infinite;
-} */
-
 .hero .square,
 .hero .circle,
 .hero .triangle {
